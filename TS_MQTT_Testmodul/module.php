@@ -38,7 +38,7 @@ class TS_MQTT_Testmodul extends IPSModule
                     $this->SendDebug('Topic', $Buffer->TOPIC, 0);
                     $this->SendDebug('Msg', $Buffer->MSG, 0);
 					$teile = explode("/", $Buffer->TOPIC);
-					$ident = $teile[1];
+					$ident = $teile[2];
 					if (!empty($ident)) {
 						$this->SendDebug('Variable', $ident, 0);
 						$this->RegisterVariableString($ident, $ident, '');
