@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-class TS_MQTT-Testmodul extends IPSModule
+class TS_MQTT_Testmodul extends IPSModule
 {
     public function Create()
     {
